@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Header } from "./components/Header";
+import { SearchForm } from "./components/SeachForm";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -13,6 +14,8 @@ const App = () => {
     >
       <div className="container mx-auto">
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+
+        <SearchForm isDarkMode={isDarkMode} />
       </div>
     </div>
   );
