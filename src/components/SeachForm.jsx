@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SearchIcon } from "../assets/SVGComponent";
+import { MainContent } from "./MainContent";
 
 export const SearchForm = ({ isDarkMode }) => {
   const [usrInput, setUsrInput] = useState("");
@@ -46,6 +47,8 @@ export const SearchForm = ({ isDarkMode }) => {
           </button>
         </div>
       </form>
+
+      <MainContent isDarkMode={isDarkMode} />
     </main>
   );
 };
