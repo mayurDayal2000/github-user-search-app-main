@@ -1,4 +1,5 @@
 import { Intro } from "./content/Intro";
+import { Stats } from "./content/Stats";
 
 export const MainContent = ({ isDarkMode }) => {
   return (
@@ -10,7 +11,7 @@ export const MainContent = ({ isDarkMode }) => {
       } rounded-2xl`}
     >
       <Intro isDarkMode={isDarkMode} />
-
+      <Stats isDarkMode={isDarkMode} />
       
     </section>
   );
