@@ -3,7 +3,7 @@ export const Stats = ({isDarkMode}) => {
     <>
       {/* Stats Section */}
       <div
-        className={`my-6 md:my-8 rounded-lg p-2 md:px-8 md:py-4 ${
+        className={`my-6 md:my-8 rounded-lg p-2 md:px-8 md:py-4 xl:ms-[160px] ${
           isDarkMode ? "bg-[#141D2F]" : "bg-[#F6F8FF]"
         }`}
       >

@@ -1,4 +1,5 @@
 import { Intro } from "./content/Intro";
+import { Profile } from "./content/Profile";
 import { Stats } from "./content/Stats";
 
 export const MainContent = ({ isDarkMode }) => {
@@ -12,7 +13,7 @@ export const MainContent = ({ isDarkMode }) => {
     >
       <Intro isDarkMode={isDarkMode} />
       <Stats isDarkMode={isDarkMode} />
-      
+      <Profile isDarkMode={isDarkMode} />
     </section>
   );
 };
