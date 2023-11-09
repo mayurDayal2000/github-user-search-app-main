@@ -3,56 +3,40 @@ import {
   LocationIcon,
   OrganisationIcon,
   TwitterIcon,
-} from "../../assets/SVGComponent";
+} from '../../assets/SVGComponent';
 
-export const Profile = ({ isDarkMode }) => {
+export const Profile = () => {
   return (
     <>
-      <div className="xl:ms-[160px]">
-        <div className="md:grid md:grid-cols-2 md:items-center">
-          <div
-            className={` flex items-center gap-x-5 text-sm md:text-base font-normal mb-4 md:mb-5 ${
-              isDarkMode ? "text-white" : "text-[#4B6A9B]"
-            }`}
-          >
-            <LocationIcon className="fill-current" />
+      <div className='xl:ms-[160px]'>
+        <div className='md:grid md:grid-cols-2 md:items-center'>
+          <div className='mb-4 flex items-center gap-x-5 text-sm font-normal text-[#4B6A9B] dark:text-white md:mb-5 md:text-base'>
+            <LocationIcon className='fill-current' />
             <address>San Francisco</address>
           </div>
 
-          <div
-            className={`flex items-center gap-x-5 text-smmd:text-base font-normal mb-4 md:mb-5 ${
-              isDarkMode ? "text-white" : "text-[#4B6A9B]"
-            }`}
-          >
-            <LinkIcon className="fill-current" />
+          <div className='text-smmd:text-base mb-4 flex items-center gap-x-5 font-normal text-[#4B6A9B] dark:text-white md:mb-5'>
+            <LinkIcon className='fill-current' />
             <a
-              href="https://github.blog"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.blog'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               https://github.blog
             </a>
           </div>
         </div>
 
-        <div className="md:grid md:grid-cols-2 md:items-center">
-          <div
-            className={`flex items-center gap-x-5 text-sm mb-4 md:mb-0 md:text-base font-normal opacity-50 ${
-              isDarkMode ? "text-white" : "text-[#4B6A9B]"
-            }`}
-          >
-            <TwitterIcon className="fill-current" />
-            <a href="#" target="_blank" rel="noopener noreferrer">
+        <div className='md:grid md:grid-cols-2 md:items-center'>
+          <div className='mb-4 flex items-center gap-x-5 text-sm font-normal text-[#4B6A9B] dark:text-white md:mb-5 md:text-base'>
+            <TwitterIcon className='fill-current' />
+            <a href='#' target='_blank' rel='noopener noreferrer'>
               Not Available
             </a>
           </div>
 
-          <div
-            className={`flex items-center gap-x-5 text-sm md:text-base font-normal ${
-              isDarkMode ? "text-white" : "text-[#4B6A9B]"
-            }`}
-          >
-            <OrganisationIcon className="fill-current" />
+          <div className='flex items-center gap-x-5 text-sm font-normal text-[#4B6A9B] dark:text-white md:mb-5 md:text-base'>
+            <OrganisationIcon className='fill-current' />
             <p>@github</p>
           </div>
         </div>
