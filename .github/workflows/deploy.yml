@@ -1,0 +1,34 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Set your default branch here
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'  # Node.js version 20
+
+    - name: Install Yarn
+      run: npm install -g yarn  # Ensure Yarn is installed globally
+
+    - name: Install Dependencies
+      run: yarn install  # Install dependencies using Yarn
+
+    - name: Build React App
+      run: yarn build  # Build project using Yarn
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages  # The branch the action should deploy to.
+        folder: dist     # The folder the action should deploy.
