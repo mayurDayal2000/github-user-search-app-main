@@ -610,8 +610,8 @@ __metadata:
   linkType: hard
 
 "@octokit/app@npm:^14.0.0":
-  version: 14.0.1
-  resolution: "@octokit/app@npm:14.0.1"
+  version: 14.0.2
+  resolution: "@octokit/app@npm:14.0.2"
   dependencies:
     "@octokit/auth-app": ^6.0.0
     "@octokit/auth-unauthenticated": ^5.0.0
@@ -619,8 +619,8 @@ __metadata:
     "@octokit/oauth-app": ^6.0.0
     "@octokit/plugin-paginate-rest": ^9.0.0
     "@octokit/types": ^12.0.0
-    "@octokit/webhooks": ^12.0.1
-  checksum: e44187ec3750be3402d8b30fcf012c19bef0ee40cca81ddf94d28c089eecb374813cbe2bfc43c5690d45bce3bc7251b73d73ba7e9cfdd4f54b1226a745dbfb2b
+    "@octokit/webhooks": ^12.0.4
+  checksum: 1d6745302f81694c85a47997640be1e509a61da1de4ec31f8fed3715daf03cbcf39d6f80a146e2d2a0ff0ebc987fcda5dba9d53f1357f2e8c93edd5675db3780
   languageName: node
   linkType: hard
 
@@ -898,15 +898,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/webhooks@npm:^12.0.1":
-  version: 12.0.3
-  resolution: "@octokit/webhooks@npm:12.0.3"
+"@octokit/webhooks@npm:^12.0.4":
+  version: 12.0.10
+  resolution: "@octokit/webhooks@npm:12.0.10"
   dependencies:
     "@octokit/request-error": ^5.0.0
     "@octokit/webhooks-methods": ^4.0.0
     "@octokit/webhooks-types": 7.1.0
     aggregate-error: ^3.1.0
-  checksum: 2db63122eab1852047379f9cb0024cdb22a2bf16356907b66bc71d5a01814b069178aee07fe61faeb80cde3dcd513a39526974f8bae5ec6e26b63fe87877ace1
+  checksum: 4623c0d2c5dbef05f23bfdf0e66ca2fff1fa57f92fbf00c7d6e9d0461d2392a8cde70b41f093c9ccbdefeab3661d6fbec66c732db4d9b2a34e83a27fa8045d1b
   languageName: node
   linkType: hard
 
